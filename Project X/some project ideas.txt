@@ -1,0 +1,22 @@
+Mechcommander Online/3
+-F2P for multiplayer and one campaign
+-Pay for other campaigns/story
+-Two modes, one with simpler gameplay and just right click rts style
+-Other is mechanic based, land skillshots and heat management and jump management etc
+-Some mechs sold? Maybe p2w issue, maybe just cosmetics + campaign modes
+-Modeling/graphics are a huge issue
+-Copywrite issues as well are an issue
+
+World War 2 Tabletop/Turn based
+-Turn based World War 2 campaign mode
+-Similar to Megamek or Battletech
+-Graphics heavy but easier to code (turn based similar to 3d card game)
+-Wouldn't appeal if not done well? If done well would have a really good niche though
+-Macro campaign portion building units/army and then an actual battle simulator style portion
+-Endless campaign (story is limited to some portion but afterwards depending on what faction can add to history possibly)
+
+2D Path of Exile Style platformer
+-Easiest to make
+-Similar design to what we have already (Jerrell's smaller platformer)
+-RPG elements and some sort of storyline that appeals
+-Characters can do all sorts of things and have certain elements to them (sorta like warframe or path of exile with each with different mechanics to do things)

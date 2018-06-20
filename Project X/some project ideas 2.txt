@@ -1,0 +1,143 @@
+World War 2 Tabletop/Turn based (we'll name it Project X for now- Warsaw Pact, Wehrmacht Offense, The Western Front???)
+-Turn based World War 2 campaign mode
+-Similar to Megamek or Battletech
+-Graphics 2d based, similar to megamek/endless war
+-Macro campaign portion building units/army and then an actual battle simulator style portion
+-Endless campaign (story is limited to some portion but afterwards depending on what faction can add to history possibly)
+-Focuses on commanding a platoon/army/w/e not so much an entire nation/faction. Allows more choice to do
+
+Comparison to Battletech (Beat this game and own it currently):
+-Similar macro portion, timeline of some sort or something that allows repair/refit + getting new supplies/troops, something to do with morale,
+something in a map (map of Europe Front with different towns to go to).
+-Graphics is more based on 2d style
+-WW2 setting, different numbers/needs/upgrades
+-Different unit types/not just 4 mechs only
+-Objectives are similar and randomly generated map tilesets/armies to fight against/objectives is good
+-Save game structure/unity engine is downfall tbh it makes the engine run really slowly sometimes/not optimized
+
+Comparison to Civilization (Watched some gameplay of it):
+-Not so much continuous sandbox style game
+-More focus on the war itself and decisions on who to fight/what strategies in war
+-Focus on specific timeline and what is realistic then (e.g. no army of war elephants)
+-Fighting/war strat is good, however probably have more different moves e.g. different ammo types, artillery, fog of war, etc
+
+Comparison to Heart of Iron (Watched some gameplay of it):
+-Similar to Wargame, looking at a lot of boxes for most of the game to fight
+-macro is good/research + army formations
+-Similar to civ in that it doesn't have a direct objective (sandbox style) and similar to Wargame as it still has war focus
+-Can break history- that's the goal of the campaign to not have it play linear and can pick different things to ally with
+
+Comparison to Normandy 44/Wargame (Played through parts of Wargame and own it currently, did not play Normandy but it is made by Eugen as well):
+-Eugen Game series looks at multiple boxes of units and fights from there
+-However the macro is good (moving different platoons/army types against certain portions of map)
+-AI is incredibly good
+-Lots of different mechanics in these kind of games, less objective based more focus on simply winning a war
+-Real time not turn based but similar play as turn based
+
+Development cycle:
+
+Engine considerations:
+Unity
+Strengths: 
+-Easier to learn the background of
+-Networking is possible and free? have to learn more of this, tried and failed during my winter break this year
+-UI and board is easier to make on this engine
+-Lots of guides to work with
+-Haowen and I have a Udemy course that we can reference
+Weaknesses: 
+-Uses C# (not that useful perhaps as something to learn?)
+-Can be amazing performance or terrible performance, see Battletech (which imho suffers from some bad performance issues sometimes- save games make actual gameplay
+lag...)
+-I have less experience on this than Unreal
+
+Unreal
+Strengths:
+-Really good graphic potential
+-C++ is something we all know, object oriented design
+-Blueprint mode is possible (e.g. block coding similar to Scratch)
+-Has baseline board game layout we can use
+-I have more experience on this than Unity (Created a physics based escape the room type of minigame with small UI design)
+-Haowen and I have a Udemy course that we can reference (and I've done part of it already)
+Weaknesses:
+-LOTS of documentation
+-REALLY LARGE ENGINE (well it was designed for triple A game design)
+-Decent guides to work with but less than unity
+
+Our Own Engine
+Strengths:
+-We can choose what we want on it/tailor it to our game
+-We can choose the language and what we want to learn from the game design
+-We know everything about it once we've made it
+-Similar to Othello tkinter game we made? Has anyone worked on pygame module before?
+Weaknesses:
+-Not sure about workload/how much effort we need to make this
+If we go this route:
+-My understanding is first create something like Othello Project 4, we can split the work and create different classes like tank class or w/e
+-Slowly make the board game as a text file style thing with a certain map setup/tile setup
+-Then put on a graphical interface
+-Then create the UI/program exe file
+-Then make it a runnable and we basically have the game
+-OVERALL SEEMS MORE WORK/CREATIVE THINKING BUT SEEMS REASONABLE IF IT'S SIMILAR DESIGN TO OTHELLO PROJECT 4 OF ICS 32
+
+END OF SUMMER SESSION 1
+-Player can play against himself/second person on the same computer- extremely useful for testing
+
+END OF SUMMER SESSION 2/SUMMER
+-Player can play against a good AI, player can possibly play against people on private servers/1v1 multiplayer based on lobby
+
+IF CONTINUE DEVELOPMENT AFTER SUMMER (school year continuing)
+-Campaign mode for Germany, America, and Soviet Union (and maybe even more, France global takeover???), more units, more features
+
+PARTS TO SPLIT UP ON/WHAT TO WORK ON
+-GITHUB: Github repository of some sort/Share code (GITHUB)
+-UI: runnable executable/understanding how to get a file + menu up and running, along with a pause menu of some sort (UI DESIGN)
+-Save Games: to save state of the board/units/state of the map (FILE SYSTEMS)
+-Pregame: Picking units into player's army, cost limits, map selection, picking units into the enemy's army, sorting units, UI, random selection/preset selections
+based on timelines/factions, etc (UI DESIGN/SORTING/OBJECT ORIENTED DESIGN)
+-Loading: Do we need this? Maybe a Loading screen of some sort if it's loading is noticable (UI DESIGN)
+-Board/tileset: given a map/image of map set up the map's tiles so each tile has different effects e.g. snow makes units slower, 
+water is not traversable, buildings give cover/block fog of war/block movement and attack, etc (OBJECT ORIENTED DESIGN)
+-Graph systems/allowable map moves/gameplay: Fog of War, attack, moving (GRAPHS)
+-Randomness in the game: Ricochet chances/attacking things, possibly getting stuck in mud, etc (PSEUDORANDOMNESS)
+-Tanks/Vehicle combat: allow for units to turn certain ways to survive/die (front should have more armor), this one might be harder?
+Can't think of an easy solution to this, don't need collision or anything just need some sort of directionality (OBJECT ORIENTED DESIGN)
+-Infantry: Should we make it single person infantry per tile or squads of infantry per tile? Otherwise simpler to make (no directionality) (OBJECT ORIENTED DESIGN)
+-Information of the fight/text of what happened: Part of UI and stuff like "Sorry I can't drive my tank there!"(move not valid) or "That's a direct hit!"
+-Animation/Art: Bonniety and HK probably have this (2D ANIMATION/ART)
+-Music/Sounds: I guess we can use free assets here or something, but have to connect to code (MUSIC/FILES TO CODE)
+-Connect Art/animation/maps to code, anyone remember what they did for Pattis last tkinter project? I didn't use a custom graphic but 
+some people used saucers or other custom graphics (e.g. pattis' head lul) (FILES TO CODE/VISUALIZATION)
+-AI: I plan to tackle this after I take CS 171 over summer and create a minesweeper AI. If I can create minesweeper AI for a game I barely know (minesweeper)
+then creating a REALLY GOOD AI for a game I know (because I have the implementation details mapped in my head) then I can probably do this (GRAPH SEARCHING/AI)
+Note that this is not machine learned AI/data mining, will learn that later on!
+-Multiplayer: Networks + depends on our engine, I personally don't know how to tackle/split this up, this is something to learn as a team I think
+If we do this, do a lobby style multiplayer probably (private public lobbies from some server?) (NETWORKS)
+I tried to make a Rock-Paper-Scissors networked game on Unity, which didn't quite work in the end, there is a lot of documentation. 
+Have to go back to ICS 32 Project 2 Connect Four sockets, I don't know much more than that.
+
+Priority:
+GITHUB -> UI -> Pregame -> Board/tileset -> Graph systems -> Randomess -> Tanks/Vehicle combat -> Infantry -> Animation/Art
+Then Later:
+Save Games -> Loading -> Information of gameplay -> Music -> AI -> Multiplayer
+
+GENERAL NOTES
+-If one person spent 10 hours a day trying to do a project, it would not match up to the amount of work done by multiple people spending 2-3 hours a day doing
+the same project
+-Pick a part to make and we'll try to fit everything together
+-Be creative, feel free to add anything you think is logical and workable that I have not stated
+-If something goes wrong/bugs, if not fixable, we can say working as intended (if it's not gamebreaking bug!)
+-I will write down everything I do on a journal/word file somewhere as a "patch notes" on my part of the game, feel free to do so as well/say on discord or w/e
+-We should ocassionally see how everyone is doing within the group on discord, though uploading to github repository/saying a thing or two of how the last week has been
+on the project should be plenty
+-If one of us has something much more urgent ofc go for that first then come back to this some other time
+-The only failure is not doing anything, any other failure is perfectly fine, but NOT DOING ANYTHING IS THE BIGGEST FAILURE
+(By this I mean not doing a project/internship at all, not trying to study new material/learn new things. I don't mind if you decide to work on something else
+but choosing to not work on something else and not work on this and just play league of overwatch of the ancients of the storm for the rest of summer till next year
+is probably not that great.. HOWEVER FEEL FREE TO WORK ON SOMETHING YOU PREFER OVER THIS IF YOU DON'T LIKE THIS IDEA, OR SUGGEST SOME OTHER IDEAS THAT YOU THINK
+NEED MORE THAN JUST ONE PERSON)
+
+GOALS OF PROJECT
+-Something that we can be proud of later/say I worked on this project, I particularly enjoyed X, Y, and Z to an interview and get the job because they see you
+are more dedicated than some guy that just walked through College without a project
+-We can say that we can work in a team well/mesh together, In4matx 43- SCRUM or AGILE development
+-Learn new stuff (networks, engine development?, save games, more on graphs, object oriented design, how to connect art/graphics to code, program design process
