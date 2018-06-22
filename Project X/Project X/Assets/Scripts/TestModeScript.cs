@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System;
 using UnityEngine;
-
 //public class TestModeScript : MonoBehaviour
 //{
 
@@ -373,6 +372,8 @@ class Board
                         int a = Int32.Parse(read1[0]);
                         int b = Int32.Parse(read1[1]);
                         moved = moveUnit(i, j, a, b);
+                        i = a;
+                        j = b;
                     }
 
                     bool attacked = false;
