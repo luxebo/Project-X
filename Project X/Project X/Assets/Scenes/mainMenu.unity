@@ -847,8 +847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa18e05b0faa98a49aadc6c5f1cf6ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 24100000, guid: 72c029ab9d1547f4f82fe56ea20a8115, type: 2}
-  soundfx: {fileID: 24100000, guid: ee060beab72979d4695b0749ae673ab3, type: 2}
+  music: {fileID: 0}
+  soundfx: {fileID: 0}
 --- !u!1 &371927079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,8 +3491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 0.0056458}
-  m_SizeDelta: {x: 3840, y: 2390.7}
+  m_AnchoredPosition: {x: -0.0070438, y: -0.0026746}
+  m_SizeDelta: {x: 4400.4, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1271553245
 MonoBehaviour:
